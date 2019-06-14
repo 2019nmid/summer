@@ -27,8 +27,8 @@
 + Github
 	+ [慕课网--版本控制入门，搬进Github](http://www.imooc.com/learn/390)
 	+ [Github 简明教程](http://www.runoob.com/w3cnote/git-guide.html)
-+ Sublim
-	+ Sublim
++ Sublime
+	+ Sublime
 		+ [Sublime Text3前端必备插件](http://www.jianshu.com/p/edbc2a13494b) (安装自己需要的插件,不要全部安装)
 		+ [12个不可不知的Sublime Text应用技巧和诀窍 ](https://segmentfault.com/a/1190000000505218)
 + Markdown
