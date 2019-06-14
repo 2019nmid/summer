@@ -3,8 +3,11 @@
 ### 任务内容：
 
 - 注册GitHub账号并安装git，熟悉git的相关操作
+
 - [git学习传送门][传送门]
-[传送门]: https://www.liaoxuefeng.com/wiki/896043488029600	"git"
+
+  [传送门]: https://www.liaoxuefeng.com/wiki/896043488029600	"git"
+
 - 接受各自对应组长的邀请，并进入对应小组，查看github仓库发布的任务
 - 熟悉HTML以及CSS的基础应用
 - 了解基础布局方式
