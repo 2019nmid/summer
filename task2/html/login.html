@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/standard.css">
+        <style>
+            body{overflow: hidden;}
+            .login_wrap{width: 300px; height: 296px; padding: 30px 10px 10px;box-sizing: border-box; position: relative;}
+            .login_wrap .tabs{margin-bottom: 10px;}
+            .login_wrap .tabs .tabs-start{text-align: center;height: 25px;border-bottom: 1px solid #ececec;cursor: pointer;color: #9B9B9B;}
+            .login_wrap .tabs .tabs-start li{width: 50%;float: left;font-size:14px;padding:5px 0;}
+            .login_wrap .tabs .tabs-quick{font-size: 14px;font-weight:bold;border-bottom:1px solid #ececec;height: 25px; cursor: pointer;}
+            .login_wrap .tabs .switch{position: absolute;top: 10px;right: 10px;cursor: pointer;}
+            .login_wrap .tabs .switch .quick{background:url(../images/quick.png);background-size: 30px}
+            .login_wrap .tabs .switch .start{background: url(../images/start.png);background-size: 30px;}
+            .login_wrap .tabs .switch a{width: 30px;height: 30px;position: relative;}
+            
+            .login_wrap .login-start input{outline: none;border: 0;background-color: #ffffff;padding-left:5px;display: inline-block;padding: 10px;}
+            .login_wrap .login-start div{margin-top:10px;height: 36px;border-radius: 3px;}
+            .login_wrap .login-start .logined{background-color: rgba(66,189,86,.5);color:#ffffff;text-align: center;}
+            .login_wrap .login-start .logined a{padding-top:5px;display: block;}
+            .login_wrap .login-start .verification-code,.telephone{background-color: #ffffff;}
+            .login_wrap .login-start .remember {border-bottom: 1px solid #ececec;height: 30px;}
+            .login_wrap .login-start .remember .auto {float: left;}
+            .login_wrap .login-start .remember .auth-code{cursor:pointer;font-size:12px;color:#41AC52;float:right;padding-top:4px;}
+            .login_wrap .login-start .remember p label{font-size: 13px;}
+            .login_wrap .login-start .login_other p {font-size: 13px;color:#9B9B9B;display: block;float: left;}
+            .login_wrap .login-start .login_other img {width: 20px;height: 20px;margin-left: 10px;}
+            .login_wrap .login-start .login_other img{display: inline-block;cursor: pointer;}
+
+            .login_wrap .login-quick img{display: block;margin: 0 auto;width: 170px;height: 170px;margin-top: 15px;}
+            .login_wrap .login-quick p {display: inline-block;padding: 3px 20px;margin-top: 10px;margin-left: 32px;border-radius: 12px;background-color: rgba(0,0,0,.08);color: #494949;}
+            
+            .hidden{display: none;}
+            .on {display: block;}
+            .black{color:#333333;border-bottom: 1px solid #333333;}
+            .login_scar {position: absolute;top: 5px;margin-left: -120px;font-size: 13px;color: #9B9B9B;padding: 2px 5px;background-color:rgba(226, 226, 226, 0.361);border: 1px solid rgba(66,189,86,.5);border-radius: 3px;}
+        </style>
+
+    </head>
+    <body>
+        <div style="background-color: #edf4ed" class="login_wrap">
+            <div class="tabs">
+                <ul class="tabs-start clear" id="login_start">
+                    <li id="login_note">短信登陆/注册</li>
+                    <li id="login_password">密码登陆</li>
+                </ul>
+                <ul class="tabs-quick" id="login_quick">
+                    <li>二维码登录</li>
+                </ul>
+                <div class="switch">
+                    <a class="quick on" id="switch-to-quick" onmouseover="mOver1()" onmouseout="mOut1()"></a>
+                    <a class="start" id="switch-to-start" onmouseover="mOver2()" onmouseout="mOut2()"></a>
+                </div>
+            </div>
+
+            <div class="login-start" id="start">
+                <p style="color:#9B9B9B;font-size:12px;" id="title_text" class="clear">登陆注册表示同意<span style="color:#41AC52;margin-left:3px;cursor: pointer;">豆瓣使用协议、隐私政策</span></p>
+                <div class="telephone">
+                    <input placeholder="手机号" id="input_top">
+                </div>
+                <div class="verification-code">
+                    <input placeholder="验证码" id="input_bottom">
+                </div>
+                <div class="logined">
+                    <a>登陆豆瓣</a>
+                </div>
+                <div class="remember">
+                    <p class="auto"><input type="checkbox" id="auto_login"><label for="auto_login">下次自动登陆</label></p>
+                    <p class="auth-code" id="auto_text">收不到验证码</p>
+                </div>
+                
+                <div class="login_other">
+                    <p>第三方登陆</p>
+                    <img src="../images/weChat.svg">
+                    <img src="../images/weibo.svg">
+                </div>
+            </div>
+
+            <div class="login-quick" id="quick">
+                <img src="../images/two-dimension-code.png">
+                <p>请打开豆瓣客户端扫一扫</p>
+            </div>
+
+        </div>
+
+        <script>
+            let login_to_start = document.querySelector('#switch-to-quick');
+            let login_to_quick = document.querySelector('#switch-to-start');
+            let login_start = document.querySelector('#login_start');
+            let login_quick = document.querySelector('#login_quick');
+            let start = document.querySelector('#start');
+            let quick = document.querySelector('#quick');
+            let note = document.querySelector('#login_note');
+            let password = document.querySelector('#login_password');
+            let text1 = document.getElementById('title_text');
+            let text2 = document.getElementById('auto_text');
+            let input1 = document.getElementById('input_top');
+            let input2 = document.getElementById('input_bottom');
+
+            login_quick.classList.toggle("hidden");
+            quick.classList.toggle("hidden");
+            note.classList.toggle("black");
+
+            password.onclick = function() {
+                note.removeAttribute("class");
+                password.setAttribute("class", "black");
+                text1.innerHTML = `<span style="color:#41AC52;text-align:right;float:right;">找回密码</span>`;
+                text2.innerHTML = `海外手机登录`;
+                input1.setAttribute("placeholder", "手机号 / 邮箱");
+                input2.setAttribute("placeholder", "密码");
+            }
+
+            note.onclick = function() {
+                password.removeAttribute("class");
+                note.setAttribute("class", "black");
+                text1.innerHTML = `登陆注册表示同意<span style="color:#41AC52;margin-left:3px;cursor: pointer;">豆瓣使用协议、隐私政策</span>`;
+                text2.innerHTML = `收不到验证码`;
+                input1.setAttribute("placeholder", "手机号");
+                input2.setAttribute("placeholder", "验证码");
+            }
+
+            login_to_start.onclick = function() {
+                login_to_quick.classList.toggle("on");
+                login_to_start.classList.toggle("on");
+                login_start.classList.toggle("hidden");
+                login_quick.classList.toggle("hidden");
+                quick.classList.toggle("hidden");
+                start.classList.toggle("hidden");
+            }
+
+            login_to_quick.onclick = function() {
+                login_to_quick.classList.toggle("on");
+                login_to_start.classList.toggle("on");
+                login_start.classList.toggle("hidden");
+                login_quick.classList.toggle("hidden");
+                quick.classList.toggle("hidden");
+                start.classList.toggle("hidden");
+            }
+
+            function mOver1() {
+                login_to_start.innerHTML = `<div class="login_scar">扫码登陆</div>`;
+            }
+
+            function mOut1() {
+                login_to_start.innerHTML = ``;
+            }
+
+            function mOver2() {
+                login_to_quick.innerHTML = `<div class="login_scar">短信登陆 / 注册</div>`;
+            }
+
+            function mOut2() {
+                login_to_quick.innerHTML = ``;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+body,p,h1,h2,h3,h4,h5,ul,ol{margin:0;}
+ul{padding-left: 0;}
+img{border: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+body{font-size: 16px;width: 100vw;}
+
+.clear{zoom: 1;}
+.clear:after{content:'';display: block;clear: both;}
+
+.elliptical{text-overflow: ellipsis;overflow: hidden;display: -webkit-box;-webkit-line-clamp:1;-webkit-box-orient: vertical;}
