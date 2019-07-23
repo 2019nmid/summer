@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/standard.css" type="text/css">
+        <link rel="stylesheet" href="./css/main.css" type="text/css">
+        <title>豆瓣</title>
+    </head>
+    <body>
+        <div class="footer">
+            <div class="nav clear">
+                <img src="./images/nav.png">
+
+                <form>
+                    <span class="search clear">
+                        <input placeholder="书籍、电影、音乐、小组、小站、成员" style="width:250px;">
+                    </span>
+                    <span class="pic_box clear">
+                        <input type="submit" value="" style="font-size:0;" class="pic">
+                    </span>
+                </form>
+
+                <ul>
+                    <li><a>读书</a></li>
+                    <li><a>电影</a></li>
+                    <li><a>音乐</a></li>
+                    <li><a>小组</a></li>
+                    <li><a>同城</a></li>
+                    <li><a>FM</a></li>
+                    <li><a>时间</a></li>
+                    <li><a>豆品</a></li>
+                </ul>
+            </div>
+
+            <div class="login_box">
+                <div class="login clear">
+                    <iframe style="width:300px;height:300px;float: right;" frameborder="0" src="./html/login.html"></iframe>
+                    <div class="download">
+                        <p style="font-size:25px;color:#111111;line-height:50px;">豆瓣 6.0</p>
+                        <div style="position: relative;">
+                            <a style="color:#ffffff;padding:5px 20px;background-color:#00B51D;font-size:12px;border-radius:3px;cursor: pointer;vertical-align: middle;">下载豆瓣 App</a>
+                            <img src="./images/two-dimension-code2.png" style="width:28px;height:28px;margin-left: 10px;border: 1px solid gray;vertical-align: middle;" onmouseover="show()">
+                            <div class="show_authCode" id="authCode" style="display:none;" onmouseout="stop()">
+                                <img src="./images/two-dimension-code3.png" style="width:160px;height:160px;padding: 20px 20px 5px;">
+                                <p style="font-size:12px;text-align:center;color:#9B9B9B;padding-bottom: 10px;">iOS / Android 扫码直接下载</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-hot clear">
+            <div class="side">
+                <div class="images_box">
+                    <img src="./images/item-hot-side.jpg">
+                </div>
+                <div class="mod">
+                    <h2 style="margin-bottom:10px;">热门话题&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·<span style="font-size:12px;color:#666666;">&nbsp;（<a href="http://www.baidu.com">去话题中心</a>）</span></h2>
+                    <ul>
+                        <li>
+                            <h2><a href="http://ww.baidu.com">我被“扼杀”的爱好</a></h2>
+                            <p style="font-size:13px;color:#AAAAAA;line-height:20px">20457人浏览</p>
+                        </li>
+                        <li>
+                            <h2><a href="http://ww.baidu.com">游戏中的“意识”有多重要</a></h2>
+                            <p style="font-size:13px;color:#AAAAAA;line-height:20px">32261人浏览</p>
+                        </li>
+                        <li>
+                            <h2><a href="http://ww.baidu.com">一档综艺节目最吸引你的特质是什么？</a></h2>
+                            <p style="font-size:13px;color:#AAAAAA;line-height:20px">10699人浏览</p>
+                        </li>
+                        <li>
+                            <h2><a href="http://ww.baidu.com">从你图纸上的作品变成实物</a></h2>
+                            <p style="font-size:13px;color:#AAAAAA;line-height:20px">2196人浏览</p>
+                        </li>
+                        <li>
+                            <h2><a href="http://ww.baidu.com">你手写的古文字</a></h2>
+                            <p style="font-size:13px;color:#AAAAAA;line-height:20px">1666人浏览</p>
+                        </li>
+                        <li>
+                            <h2><a href="http://ww.baidu.com">工作日的午间散步</a></h2>
+                            <p style="font-size:13px;color:#AAAAAA;line-height:20px">296376人浏览</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main">
+                <h2 style="margin-bottom:10px;">热门内容&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·<span style="font-size:12px;color:#666666;">&nbsp;（<a href="http://www.baidu.com">更多</a>）</span></h2>
+                <div class="albums clear">
+                    <ul>
+                        <li>
+                            <img src="./images/albums1.webp">
+                            <p>折纸系列-气球皮卡丘</p>
+                        </li>
+                        <li>
+                            <img src="./images/albums2.webp">
+                            <p>折纸系列-气球皮卡丘</p>
+                        </li>
+                        <li>
+                            <img src="./images/albums3.webp">
+                            <p>折纸系列-气球皮卡丘</p>
+                        </li>
+                        <li>
+                            <img src="./images/albums4.webp">
+                            <p>折纸系列-气球皮卡丘</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="notes">
+                    <ul>
+                        <li>
+                            <a href="http://www.baidu.com">蒙古国小记</a>
+                            <div style="color:#999999">六儿。 的日记</div>
+                            <p>1 飞机向北京的西北方飞去，穿过草原和戈壁，穿过<br>一大片无人区，两个半小时后，落...</p>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">2019上半年美剧总结：心里话，补剧笔记及关注</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">找出石头里的那只金龟子</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">母亲的处事</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">重庆8D魔幻地形走红，短视频改变城市形象认知？</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">这样装修自己的小家</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">尺波</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">为什么日剧里的家居风格总是值得我们借鉴？</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">夏夜寻蝉记</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">我爸讲怀旧苹果</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-times clear">
+            <div class="wrapper clear">
+                <div class="sidenav">
+                    <h2><a style="font-weight:normal">豆瓣时间</a></h2>
+                </div>
+                <div class="side"></div>
+                <div class="main">
+                    <h2 style="margin-bottom:10px;font-size:15px;color:#072;font-weight: normal;line-height:40px;margin-bottom:10px;">热门内容&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·<span style="font-size:12px;color:#666666;">&nbsp;（<a href="http://www.baidu.com">更多</a>）</span></h2>
+                    <ul class="clear">
+                        <li>
+                            <img src="./images/item-times/times1.jpg">
+                            <p style="font-size: 13px;text-align: center;line-height:20px;padding:5px 0;margin-bottom:5px;">马伯庸的冷门书单</p>
+                            <p style="color:#999999;font-size:12px;text-align: center;">音频专栏</p>
+                        </li>
+                        <li>
+                            <img src="./images/item-times/times2.jpg">
+                            <p style="font-size: 13px;text-align: center;line-height:20px;padding:5px 0;margin-bottom:5px;">黑白之间：二十八堂书法练习课</p>
+                            <p style="color:#999999;font-size:12px;text-align: center;">视频专栏</p>
+                        </li>
+                        <li>
+                            <img src="./images/item-times/times3.jpg">
+                            <p style="font-size: 13px;text-align: center;line-height:20px;padding:5px 0;margin-bottom:5px;">从格里菲斯到诺兰——影迷都在看的电影结构大师课</p>
+                            <p style="color:#999999;font-size:12px;text-align: center;">视频专栏</p>
+                        </li>
+                        <li>
+                            <img src="./images/item-times/times4.jpg">
+                            <p style="font-size: 13px;text-align: center;line-height:20px;padding:5px 0;margin-bottom:5px;">打开电影声音的魔盒——好莱坞声音设计大师课</p>
+                            <p style="color:#999999;font-size:12px;text-align: center;">视频专栏</p>
+                        </li>
+                        <li>
+                            <img src="./images/item-times/times5.jpg">
+                            <p style="font-size: 13px;text-align: center;line-height:20px;padding:5px 0;margin-bottom:5px;">一剧之本——好莱坞编剧教父大师课</p>
+                            <p style="color:#999999;font-size:12px;text-align: center;">视频专栏</p>
+                        </li>
+                    </ul>
+                    <ul class="clear">
+                        <li>
+                            <img src="./images/item-times/times6.jpg">
+                            <p style="font-size: 13px;text-align: center;line-height:20px;padding:5px 0;margin-bottom:5px;">老叶说电影——90分钟看懂中国电影产业</p>
+                            <p style="color:#999999;font-size:12px;text-align: center;">视频专栏</p>
+                        </li>
+                        <li>
+                            <img src="./images/item-times/times7.jpg">
+                            <p style="font-size: 13px;text-align: center;line-height:20px;padding:5px 0;margin-bottom:5px;">好莱坞特效大师课——从概念艺术到3D建模</p>
+                            <p style="color:#999999;font-size:12px;text-align: center;">视频专栏</p>
+                        </li>
+                        <li>
+                            <img src="./images/item-times/times8.jpg">
+                            <p style="font-size: 13px;text-align: center;line-height:20px;padding:5px 0;margin-bottom:5px;">如何成为学习高手——终身受用的思维方法</p>
+                            <p style="color:#999999;font-size:12px;text-align: center;">音频专栏</p>
+                        </li>
+                        <li>
+                            <img src="./images/item-times/times9.jpg">
+                            <p style="font-size: 13px;text-align: center;line-height:20px;padding:5px 0;margin-bottom:5px;">好莱坞人像布光课——美恐摄影大师教你立刻出师</p>
+                            <p style="color:#999999;font-size:12px;text-align: center;">视频专栏</p>
+                        </li>
+                        <li>
+                            <img src="./images/item-times/times10.jpg">
+                            <p style="font-size: 13px;text-align: center;line-height:20px;padding:5px 0;margin-bottom:5px;">笔墨的世界——十八个传世碑帖学通书法</p>
+                            <p style="color:#999999;font-size:12px;text-align: center;">视频专栏</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-video clear">
+            <div class="wrapper clear">
+                <div class="sidenav">
+                    <h2><a style="font-weight:normal">视频</a></h2>
+                </div>
+                <div class="side"></div>
+                <div class="main clear">
+                    <h2 style="margin-bottom:10px;font-size:15px;color:#072;font-weight: normal;line-height:40px;margin-bottom:10px;">瓣嘴&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</h2>
+                    <ul class="clear">
+                        <li>
+                            <img src="./images/video/video1.jpg">
+                            <p style="font-size:13px;color:#999999;line-height:20px;margin:5px 0;">马伊琍衣品遭围攻吐槽，清奇脑回路解读流行语</p>
+                        </li>
+                        <li>
+                            <img src="./images/video/video2.jpeg">
+                            <p style="font-size:13px;color:#999999;line-height:20px;margin:5px 0;">姚晨忘带偶像包袱，展示十级搞笑功力</p>
+                        </li>
+                        <li>
+                            <img src="./images/video/video3.jpg">
+                            <p style="font-size:13px;color:#999999;line-height:20px;margin:5px 0;">陈坤公开三大bug，原来你是这样的厂花</p>
+                        </li>
+                    </ul>
+                    <h2 style="margin-bottom:10px;font-size:15px;color:#072;font-weight: normal;line-height:40px;margin-bottom:10px;">观影会客厅&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</h2>
+                    <ul class="clear">
+                        <li>
+                            <img src="./images/video/video4.jpg">
+                            <p style="font-size:13px;color:#999999;line-height:20px;margin:5px 0;">焦雄屏：把电影当做一种信仰</p>
+                        </li>
+                        <li>
+                            <img src="./images/video/video5.jpg">
+                            <p style="font-size:13px;color:#999999;line-height:20px;margin:5px 0;">汤姆·克鲁斯：对我来说，拍电影就是度假</p>
+                        </li>
+                        <li>
+                            <img src="./images/video/video6.jpg">
+                            <p style="font-size:13px;color:#999999;line-height:20px;margin:5px 0;">蔡明亮：创作有时候是一种命运的安排</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-film clear">
+            <div class="wrapper clear">
+                <div class="sidenav">
+                    <h2><a href="http://www.baidu.com" style="font-weight:normal">电影</a></h2>
+                    <ul>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">影讯&购票</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">选电影</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">电视剧</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">排行榜</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">分类</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">影评</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">预告片</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">问答</a></li>
+                    </ul>
+                </div>
+                <div class="side clear">
+                    <h2 style="margin-bottom:10px;font-size:15px;color:#072;font-weight: normal;line-height:40px;">影片分类&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·<span style="font-size:12px;color:#666666;">&nbsp;（<a href="http://www.baidu.com">更多</a>）</span></h2>
+                    <ul class="top clear">
+                        <li>
+                            <a href="http://www.baidu.com">爱情</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">喜剧</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">剧情</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">动画</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">科幻</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">动作</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">经典</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">悬疑</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">犯罪</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">青春</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">文艺</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">惊悚</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">搞笑</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">励志</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">纪录片</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">战争</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">黑色幽默</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">恐怖</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">美国</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">日本</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">香港</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">中国</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">英国</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">韩国</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">中国大陆</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">法国</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">台湾</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">印度</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">爱情</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">爱情</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">爱情</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">爱情</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com">爱情</a>
+                        </li>
+                    </ul>
+                    <h2 style="font-size:15px;color:#072;font-weight: normal;line-height:40px;">近期热门&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·<span style="font-size:12px;color:#666666;">&nbsp;（<a href="http://www.baidu.com">更多</a>）</span></h2>
+                    <ul class="bottom">
+                        <li><span>1.</span><a href="http://www.baidu.com">恶人传</a></li>
+                        <li><span>2.</span><a href="http://www.baidu.com">孟买酒店</a></li>
+                        <li><span>3.</span><a href="http://www.baidu.com">阿丽塔：战斗天使</a></li>
+                        <li><span>4.</span><a href="http://www.baidu.com">雷霆沙赞！</a></li>
+                        <li><span>5.</span><a href="http://www.baidu.com">夏目友人帐</a></li>
+                        <li><span>6.</span><a href="http://www.baidu.com">地久天长</a></li>
+                        <li><span>7.</span><a href="http://www.baidu.com">调音师</a></li>
+                        <li><span>8.</span><a href="http://www.baidu.com">三夫</a></li>
+                        <li><span>9.</span><a href="http://www.baidu.com">寄生虫</a></li>
+                        <li><span>10.</span><a href="http://www.baidu.com">地狱男爵：血皇后崛起</a></li>
+                    </ul>
+                </div>
+                <div class="main">
+                    <h2 style="margin-bottom:10px;font-size:15px;color:#072;font-weight: normal;line-height:40px;margin-bottom:10px;">正在热映&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·<span style="font-size:12px;color:#666666;">&nbsp;（<a href="http://www.baidu.com">更多</a>）</span></h2>
+                    <ul class="clear">
+                        <li>
+                            <img src="./images/film/film1.webp">
+                            <p style="font-size: 13px;text-align:center;line-height:30px;margin-top:10px;">哪吒之魔童降世...</p>
+                            <a style="display: block;margin:0 auto;font-size:13px;font-weight:bold;width:70px;border-radius: 3px;;line-height:22px;text-align: center;color:#ffffff;background-color:#1c8bd0;">选座购票</a>
+                        </li>
+                        <li>
+                            <img src="./images/film/film2.webp">
+                            <p style="font-size: 13px;text-align:center;line-height:30px;margin-top:10px;">银河补习班</p>
+
+                            <a style="display: block;margin:0 auto;font-size:13px;font-weight:bold;width:70px;border-radius: 3px;;line-height:22px;text-align: center;color:#ffffff;background-color:#1c8bd0;">选座购票</a>
+                        </li>
+                        <li>
+                            <img src="./images/film/film3.webp">
+                            <p style="font-size: 13px;text-align:center;line-height:30px;margin-top:10px;">灰猴</p>
+
+                            <a style="display: block;margin:0 auto;font-size:13px;font-weight:bold;width:70px;border-radius: 3px;;line-height:22px;text-align: center;color:#ffffff;background-color:#1c8bd0;">选座购票</a>
+                        </li>
+                        <li>
+                            <img src="./images/film/film4.webp">
+                            <p style="font-size: 13px;text-align:center;line-height:30px;margin-top:10px;">狮子王</p>
+
+                            <a style="display: block;margin:0 auto;font-size:13px;font-weight:bold;width:70px;border-radius: 3px;;line-height:22px;text-align: center;color:#ffffff;background-color:#1c8bd0;">选座购票</a>
+                        </li>
+                    </ul>
+                    <ul class="clear">
+                        <li>
+                            <img src="./images/film/film5.webp">
+                            <p style="font-size: 13px;text-align:center;line-height:30px;margin-top:10px;">扫毒2天地对决...</p>
+
+                            <a style="display: block;margin:0 auto;font-size:13px;font-weight:bold;width:70px;border-radius: 3px;;line-height:22px;text-align: center;color:#ffffff;background-color:#1c8bd0;">选座购票</a>
+                        </li>
+                        <li>
+                            <img src="./images/film/film6.webp">
+                            <p style="font-size: 13px;text-align:center;line-height:30px;margin-top:10px;">未来机器城</p>
+
+                            <a style="display: block;margin:0 auto;font-size:13px;font-weight:bold;width:70px;border-radius: 3px;;line-height:22px;text-align: center;color:#ffffff;background-color:#1c8bd0;">选座购票</a>
+                        </li>
+                        <li>
+                            <img src="./images/film/film7.webp">
+                            <p style="font-size: 13px;text-align:center;line-height:30px;margin-top:10px;">游戏人生 零</p>
+
+                            <a style="display: block;margin:0 auto;font-size:13px;font-weight:bold;width:70px;border-radius: 3px;;line-height:22px;text-align: center;color:#ffffff;background-color:#1c8bd0;">选座购票</a>
+                        </li>
+                        <li>
+                            <img src="./images/film/film8.webp">
+                            <p style="font-size: 13px;text-align:center;line-height:30px;margin-top:10px;">蜘蛛侠：英雄远...</p>
+
+                            <a style="display: block;margin:0 auto;font-size:13px;font-weight:bold;width:70px;border-radius: 3px;;line-height:22px;text-align: center;color:#ffffff;background-color:#1c8bd0;">选座购票</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>       
+
+        <div class="item-group clear">
+            <div class="wrapper clear">
+                <div class="sidenav">
+                    <h2><a style="font-weight:normal">小组</a></h2>
+                    <ul>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">精选</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">文化</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">行摄</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">娱乐</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">时尚</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">生活</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">科技</a></li>
+                    </ul>
+                </div>
+                <div class="side">
+                    <h2 style="margin-bottom:10px;font-size:15px;color:#072;font-weight: normal;line-height:40px;margin-bottom:10px;">小组分类&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</h2>
+                    <div class="clear">
+                        <div style="font-size:14px;color:#333;">兴趣» </div>
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com">旅行</a></li>
+                            <li><a href="http://www.baidu.com">摄影</a></li>
+                            <li><a href="http://www.baidu.com">影视</a></li>
+                            <li><a href="http://www.baidu.com">音乐</a></li>
+                            <li><a href="http://www.baidu.com">文学</a></li>
+                            <li><a href="http://www.baidu.com">游戏</a></li>
+                            <li><a href="http://www.baidu.com">动漫</a></li>
+                            <li><a href="http://www.baidu.com">运动</a></li>
+                            <li><a href="http://www.baidu.com">戏曲</a></li>
+                            <li><a href="http://www.baidu.com">桌游</a></li>
+                            <li><a href="http://www.baidu.com">怪癖</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear">
+                        <div style="font-size:14px;color:#333;">生活» </div>
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com">健康</a></li>
+                            <li><a href="http://www.baidu.com">美食</a></li>
+                            <li><a href="http://www.baidu.com">宠物</a></li>
+                            <li><a href="http://www.baidu.com">美容</a></li>
+                            <li><a href="http://www.baidu.com">化妆</a></li>
+                            <li><a href="http://www.baidu.com">护肤</a></li>
+                            <li><a href="http://www.baidu.com">服饰</a></li>
+                            <li><a href="http://www.baidu.com">公益</a></li>
+                            <li><a href="http://www.baidu.com">家庭</a></li>
+                            <li><a href="http://www.baidu.com">育儿</a></li>
+                            <li><a href="http://www.baidu.com">汽车</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear">
+                        <div style="font-size:14px;color:#333;">购物» </div>
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com">淘宝</a></li>
+                            <li><a href="http://www.baidu.com">二手</a></li>
+                            <li><a href="http://www.baidu.com">团购</a></li>
+                            <li><a href="http://www.baidu.com">数码</a></li>
+                            <li><a href="http://www.baidu.com">品牌</a></li>
+                            <li><a href="http://www.baidu.com">文具</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear">
+                        <div style="font-size:14px;color:#333;">社会» </div>
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com">求职</a></li>
+                            <li><a href="http://www.baidu.com">租房</a></li>
+                            <li><a href="http://www.baidu.com">励志</a></li>
+                            <li><a href="http://www.baidu.com">留学</a></li>
+                            <li><a href="http://www.baidu.com">出国</a></li>
+                            <li><a href="http://www.baidu.com">理财</a></li>
+                            <li><a href="http://www.baidu.com">传媒</a></li>
+                            <li><a href="http://www.baidu.com">创业</a></li>
+                            <li><a href="http://www.baidu.com">考试</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear">
+                        <div style="font-size:14px;color:#333;">艺术» </div>
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com">设计</a></li>
+                            <li><a href="http://www.baidu.com">手工</a></li>
+                            <li><a href="http://www.baidu.com">展览</a></li>
+                            <li><a href="http://www.baidu.com">曲艺</a></li>
+                            <li><a href="http://www.baidu.com">舞蹈</a></li>
+                            <li><a href="http://www.baidu.com">雕塑</a></li>
+                            <li><a href="http://www.baidu.com">纹身</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear">
+                        <div style="font-size:14px;color:#333;">学术» </div>
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com">人文</a></li>
+                            <li><a href="http://www.baidu.com">社科</a></li>
+                            <li><a href="http://www.baidu.com">自然</a></li>
+                            <li><a href="http://www.baidu.com">建筑</a></li>
+                            <li><a href="http://www.baidu.com">国学</a></li>
+                            <li><a href="http://www.baidu.com">语言</a></li>
+                            <li><a href="http://www.baidu.com">宗教</a></li>
+                            <li><a href="http://www.baidu.com">哲学</a></li>
+                            <li><a href="http://www.baidu.com">软件</a></li>
+                            <li><a href="http://www.baidu.com">硬件</a></li>
+                            <li><a href="http://www.baidu.com">互联网</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear">
+                        <div style="font-size:14px;color:#333;">情感» </div>
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com">恋爱</a></li>
+                            <li><a href="http://www.baidu.com">心情</a></li>
+                            <li><a href="http://www.baidu.com">心理学</a></li>
+                            <li><a href="http://www.baidu.com">星座</a></li>
+                            <li><a href="http://www.baidu.com">塔罗</a></li>
+                            <li><a href="http://www.baidu.com">LES</a></li>
+                            <li><a href="http://www.baidu.com">GAY</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear">
+                        <div style="font-size:14px;color:#333;">闲聊» </div>
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com">吐槽</a></li>
+                            <li><a href="http://www.baidu.com">笑话</a></li>
+                            <li><a href="http://www.baidu.com">直播</a></li>
+                            <li><a href="http://www.baidu.com">八卦</a></li>
+                            <li><a href="http://www.baidu.com">发泄</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main">
+                    <h2 style="margin-bottom:10px;font-size:15px;color:#072;font-weight: normal;line-height:40px;margin-bottom:10px;">热门小组&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·<span style="font-size:12px;color:#666666;">&nbsp;（<a href="http://www.baidu.com">更多</a>）</span></h2>
+                    <ul class="clear">
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/group/group1.webp"></div>
+                            <div class="content_box">
+                                <div class="title">帮帮组™加入这个组就有人帮你了！</div>
+                                <div class="member">16402 个成员</div>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/group/group2.webp"></div>
+                            <div class="content_box">
+                                <div class="title">我爱三毛</div>
+                                <div class="member">
+                                        46217 个成员
+                                      </div>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/group/group3.webp"></div>
+                            <div class="content_box">
+                                <div class="title">沙发客</div>
+                                <div class="member">
+                                        23013 个成员
+                                      </div>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/group/group4.webp"></div>
+                            <div class="content_box">
+                                <div class="title">刘慈欣</div>
+                                <div class="member">
+                                        29381 个成员
+                                      </div>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/group/group5.webp"></div>
+                            <div class="content_box">
+                                <div class="title">西双版纳</div>
+                                <div class="member">
+                                        11317 个成员
+                                      </div>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/group/group6.webp"></div>
+                            <div class="content_box">
+                                <div class="title">记事本圆梦小组</div>
+                                <div class="member">
+                                        115594 个成员
+                                      </div>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/group/group7.jpg"></div>
+                            <div class="content_box">
+                                <div class="title">搭讪学</div>
+                                <div class="member">
+                                        94253 个成员
+                                      </div>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/group/group8.webp"></div>
+                            <div class="content_box">
+                                <div class="title">这辈子一定要做几件疯狂的事</div>
+                                <div class="member">
+                                        93533 个成员
+                                      </div>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/group/group9.jpg"></div>
+                            <div class="content_box">
+                                <div class="title">自己给自己剪头发</div>
+                                <div class="member">
+                                        35068 个成员
+                                      </div>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/group/group10.jpg"></div>
+                            <div class="content_box">
+                                <div class="title">我们就是要做衣服给自己穿</div>
+                                <div class="member">
+                                        3752 个成员
+                                      </div>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/group/group11.webp"></div>
+                            <div class="content_box">
+                                <div class="title">对象太他妈难找了党-单身凸^-^凸</div>
+                                <div class="member">
+                                        16009 个成员
+                                      </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-read">
+            <div class="wrapper clear">
+                <div class="sidenav">
+                    <h2><a style="font-weight:normal">读书</a></h2>
+                    <ul>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">分类浏览</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">阅读</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">作者</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">书评</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">购书单</a></li>
+                    </ul>
+                </div>
+                <div class="side">
+                    <h2 style="margin-bottom:10px;font-size:15px;color:#072;font-weight: normal;line-height:40px;margin-bottom:10px;">热门标签&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</h2>
+                    <div class="clear">
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com" style="color: #999">[文学]</a></li>
+                            <li><a href="http://www.baidu.com">小说</a></li>
+                            <li><a href="http://www.baidu.com">随笔</a></li>
+                            <li><a href="http://www.baidu.com">日本文学</a></li>
+                            <li><a href="http://www.baidu.com">散文</a></li>
+                            <li><a href="http://www.baidu.com">诗歌</a></li>
+                            <li><a href="http://www.baidu.com">童话</a></li>
+                            <li><a href="http://www.baidu.com">名著</a></li>
+                            <li><a href="http://www.baidu.com">港台</a></li>
+                            <li><a href="http://www.baidu.com">更多</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear">
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com" style="color: #999">[流行]</a></li>
+                            <li><a href="http://www.baidu.com">漫画</a></li>
+                            <li><a href="http://www.baidu.com">推理</a></li>
+                            <li><a href="http://www.baidu.com">绘本</a></li>
+                            <li><a href="http://www.baidu.com">青春</a></li>
+                            <li><a href="http://www.baidu.com">科幻</a></li>
+                            <li><a href="http://www.baidu.com">言情</a></li>
+                            <li><a href="http://www.baidu.com">奇幻</a></li>
+                            <li><a href="http://www.baidu.com">武侠</a></li>
+                            <li><a href="http://www.baidu.com">更多</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear">
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com" style="color: #999">[文化]</a></li>
+                            <li><a href="http://www.baidu.com">历史</a></li>
+                            <li><a href="http://www.baidu.com">哲学</a></li>
+                            <li><a href="http://www.baidu.com">传记</a></li>
+                            <li><a href="http://www.baidu.com">设计</a></li>
+                            <li><a href="http://www.baidu.com">建筑</a></li>
+                            <li><a href="http://www.baidu.com">电影</a></li>
+                            <li><a href="http://www.baidu.com">回忆录</a></li>
+                            <li><a href="http://www.baidu.com">音乐</a></li>
+                            <li><a href="http://www.baidu.com">更多</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear">
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com" style="color: #999">[生活]</a></li>
+                            <li><a href="http://www.baidu.com">旅行</a></li>
+                            <li><a href="http://www.baidu.com">励志</a></li>
+                            <li><a href="http://www.baidu.com">教育</a></li>
+                            <li><a href="http://www.baidu.com">职场</a></li>
+                            <li><a href="http://www.baidu.com">美食</a></li>
+                            <li><a href="http://www.baidu.com">灵修</a></li>
+                            <li><a href="http://www.baidu.com">健康</a></li>
+                            <li><a href="http://www.baidu.com">家居</a></li>
+                            <li><a href="http://www.baidu.com">更多</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear">
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com" style="color: #999">[经管]</a></li>
+                            <li><a href="http://www.baidu.com">经济学</a></li>
+                            <li><a href="http://www.baidu.com">管理</a></li>
+                            <li><a href="http://www.baidu.com">商业</a></li>
+                            <li><a href="http://www.baidu.com">金融</a></li>
+                            <li><a href="http://www.baidu.com">营销</a></li>
+                            <li><a href="http://www.baidu.com">理财</a></li>
+                            <li><a href="http://www.baidu.com">股票</a></li>
+                            <li><a href="http://www.baidu.com">企业史</a></li>
+                            <li><a href="http://www.baidu.com">更多</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear">
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com" style="color: #999">[科技]</a></li>
+                            <li><a href="http://www.baidu.com">科普</a></li>
+                            <li><a href="http://www.baidu.com">互联网</a></li>
+                            <li><a href="http://www.baidu.com">编程</a></li>
+                            <li><a href="http://www.baidu.com">交互设计</a></li>
+                            <li><a href="http://www.baidu.com">算法</a></li>
+                            <li><a href="http://www.baidu.com">通信</a></li>
+                            <li><a href="http://www.baidu.com">神经网络</a></li>
+                            <li><a href="http://www.baidu.com">更多</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main">
+                    <h2 style="margin-bottom:10px;font-size:15px;color:#072;font-weight: normal;line-height:40px;margin-bottom:10px;">新书速递&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·<span style="font-size:12px;color:#666666;">&nbsp;（<a href="http://www.baidu.com">更多</a>）</span></h2>
+                    <ul class="clear">
+                            <li>
+                                <img src="./images/read/read1.jpg">
+                                <p style="font-size: 13px;color:#999999;text-align:center;margin-top: 10px;line-height:25px;"">聊天记录</p>
+                                <p style="font-size: 13px;text-align:center;line-height:25px;">〔爱尔兰〕萨莉...</p>
+                                <a style="display: block;margin:0 auto;font-size:13px;width:70px;border-radius: 3px;;line-height:22px;text-align: center;color:#ffffff;background-color:#999A95;">免费试读</a>
+                            </li>
+                            <li>
+                                <img src="./images/read/read2.jpg">
+                                <p style="font-size: 13px;color:#999999;text-align:center;margin-top: 10px;line-height:25px;"">未来</p>
+                                <p style="font-size: 13px;text-align:center;line-height:25px;">今何在</p>
+                                <a style="display: block;margin:0 auto;font-size:13px;width:70px;border-radius: 3px;;line-height:22px;text-align: center;color:#ffffff;background-color:#999A95;">免费试读</a>
+                            </li>
+                            <li>
+                                <img src="./images/read/read3.jpg">
+                                <p style="font-size: 13px;color:#999999;text-align:center;margin-top: 10px;line-height:25px;"">童年兽</p>
+                                <p style="font-size: 13px;text-align:center;line-height:25px;">陆源</p>
+                                <a style="display: block;margin:0 auto;font-size:13px;width:70px;border-radius: 3px;;line-height:22px;text-align: center;color:#ffffff;background-color:#999A95;">免费试读</a>
+                            </li>
+                            <li>
+                                <img src="./images/read/read4.jpg">
+                                <p style="font-size: 13px;color:#999999;text-align:center;margin-top: 10px;line-height:25px;"">北海鲸梦</p>
+                                <p style="font-size: 13px;text-align:center;line-height:25px;">〔英〕伊恩·麦...</p>
+                                <a style="display: block;margin:0 auto;font-size:13px;width:70px;border-radius: 3px;;line-height:22px;text-align: center;color:#ffffff;background-color:#999A95;">免费试读</a>
+                            </li>
+                        </ul>
+                    <h2 style="margin-bottom:10px;font-size:15px;color:#072;font-weight: normal;line-height:40px;margin-bottom:10px;">原创数字作品&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·<span style="font-size:12px;color:#666666;">&nbsp;（<a href="http://www.baidu.com">更多</a>）</span></h2>
+                    <ul class="clear">
+                            <li>
+                                <img src="./images/read/read5.jpg">
+                                <p style="font-size: 13px;color:#999999;text-align:center;margin-top: 10px;line-height:25px;"">女神蒙上眼</p>
+                                <p style="font-size: 13px;text-align:center;line-height:25px;">免费</p>
+                                <a style="display: block;margin:0 auto;font-size:13px;width:70px;border-radius: 3px;;line-height:22px;text-align: center;color:#ffffff;background-color:#999A95;">免费试读</a>
+                            </li>
+                            <li>
+                                <img src="./images/read/read6.jpg">
+                                <p style="font-size: 13px;color:#999999;text-align:center;margin-top: 10px;line-height:25px;">滁州案</p>
+                                <p style="font-size: 13px;text-align:center;line-height:25px;">免费</p>
+                                <a style="display: block;margin:0 auto;font-size:13px;width:70px;border-radius: 3px;;line-height:22px;text-align: center;color:#ffffff;background-color:#999A95;">免费试读</a>
+                            </li>
+                            <li>
+                                <img src="./images/read/read7.jpg">
+                                <p style="font-size: 13px;color:#999999;text-align:center;margin-top: 10px;line-height:25px;">鸿雁零丁</p>
+                                <p style="font-size: 13px;text-align:center;line-height:25px;">免费</p>
+                                <a style="display: block;margin:0 auto;font-size:13px;width:70px;border-radius: 3px;;line-height:22px;text-align: center;color:#ffffff;background-color:#999A95;">免费试读</a>
+                            </li>
+                            <li>
+                                <img src="./images/read/read8.jpg">
+                                <p style="font-size: 13px;color:#999999;text-align:center;margin-top: 10px;line-height:25px;">后丧尸时代的田...</p>
+                                <p style="font-size: 13px;text-align:center;line-height:25px;">免费</p>
+                                <a style="display: block;margin:0 auto;font-size:13px;width:70px;border-radius: 3px;;line-height:22px;text-align: center;color:#ffffff;background-color:#999A95;">免费试读</a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-music">
+            <div class="wrapper clear">
+                <div class="sidenav">
+                    <h2><a style="font-weight:normal;color:#F3BC00;">音乐</a></h2>
+                    <ul>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">音乐人</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">潮潮豆瓣音乐周</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">金羊毛计划</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">专题</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">排行榜</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">分类阅览</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">乐评</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">豆瓣FM</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">歌单</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">阿比鹿音乐奖</a></li>
+                    </ul>
+                </div>
+                <div class="side">
+                    <h2 style="margin-bottom:10px;font-size:15px;color:#072;font-weight: normal;line-height:40px;margin-bottom:10px;">本周流行音乐人&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·<span style="font-size:12px;color:#666666;">&nbsp;（<a href="http://www.baidu.com">更多</a>）</span></h2>
+                    <ul class="clear">
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/music/music3/m1.jpg"></div>
+                            <div class="content_box">
+                                <div class="title">Mr.Ray</div>
+                                <div class="member">
+                                        流派: 摇滚 Rock
+                                        </div>
+                                <div class="member">250人关注</div>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/music/music3/m2.jpg"></div>
+                            <div class="content_box">
+                                <div class="title">柴樱</div>
+                                <div class="member">
+                                        流派: 民谣 Folk
+                                        </div>
+                                <div class="member">106人关注</div>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/music/music3/m3.jpg"></div>
+                            <div class="content_box">
+                                <div class="title">MHP</div>
+                                <div class="member">
+                                        流派: 电子 Electronica
+                                        </div>
+                                <div class="member">1604人关注</div>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/music/music3/m4.jpg"></div>
+                            <div class="content_box">
+                                <div class="title">D.EAR</div>
+                                <div class="member">
+                                        流派: 世界音乐 World
+                                        </div>
+                                <div class="member">179人关注</div>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/music/music3/m5.jpg"></div>
+                            <div class="content_box">
+                                <div class="title">Chinese Football</div>
+                                <div class="member">
+                                        流派: 摇滚 Rock
+                                        </div>
+                                <div class="member">2763人关注</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main">
+                    <h2 style="margin-bottom:10px;font-size:15px;color:#072;font-weight: normal;line-height:40px;margin-bottom:10px;">豆瓣新碟榜&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·<span style="font-size:12px;color:#666666;">&nbsp;（<a href="http://www.baidu.com">更多</a>）</span></h2>
+                    <ul class="clear">
+                        <li>
+                            <img src="./images/music/music1/m1.jpg">
+                            <p style="margin-top: 10px;">1.LUNAR</p>
+                            <p>周笔畅 BiBi Chou</p>
+                        </li>
+                        <li>
+                            <img src="./images/music/music1/m2.jpg">
+                            <p style="margin-top: 10px;">2.讓水倒流</p>
+                            <p>伍佰&CHINA BLUE</p>
+                        </li>
+                        <li>
+                            <img src="./images/music/music1/m3.jpg">
+                            <p style="margin-top: 10px;">3.乐队的夏天 第4期</p>
+                            <p>吴青峰 九连真人 痛仰 面孔乐队 南无乐队 刺猬 旺福 海龟先生</p>
+                        </li>
+                        <li>
+                            <img src="./images/music/music1/m4.jpg">
+                            <p style="margin-top: 10px;">4.Honey</p>
+                            <p>张艺兴 Lay</p>
+                        </li>
+                    </ul>
+                    <ul class="clear">
+                        <li>
+                            <img src="./images/music/music1/m5.jpg">
+                            <p style="margin-top: 10px;">5.No.6 Collaborations Project</p>
+                            <p>Ed Sheeran</p>
+                        </li>
+                        <li>
+                            <img src="./images/music/music1/m6.jpg">
+                            <p style="margin-top: 10px;">6.Angel’s Pulse</p>
+                            <p>Blood Orange</p>
+                        </li>
+                        <li>
+                            <img src="./images/music/music1/m7.jpg">
+                            <p style="margin-top: 10px;">7.City Lights</p>
+                            <p>边伯贤 Byun Baekhyun</p>
+                        </li>
+                        <li>
+                            <img src="./images/music/music1/m8.jpg">
+                            <p style="margin-top: 10px;">8.LOVE [通常盤]</p>
+                            <p>菅田将暉</p>
+                        </li>
+                    </ul>
+                    <h2 style="margin-bottom:10px;font-size:15px;color:#072;font-weight: normal;line-height:40px;margin-bottom:10px;">热门歌单&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·<span style="font-size:12px;color:#666666;">&nbsp;（<a href="http://www.baidu.com">更多</a>）</span></h2>
+                    <ul class="clear">
+                        <li>
+                            <img src="./images/music/music2/m1.jpg">
+                            <p style="margin-top: 10px;">我们翻了所有用户的FM垃圾桶...</p>
+                        </li>
+                        <li>
+                            <img src="./images/music/music2/m2.jpg">
+                            <p style="margin-top: 10px;">是时候结束疲惫的一天</p>
+                        </li>
+                        <li>
+                            <img src="./images/music/music2/m3.jpg">
+                            <p style="margin-top: 10px;">这里是开功牌多巴胺制造机</p>
+                        </li>
+                        <li>
+                            <img src="./images/music/music2/m4.jpg">
+                            <p style="margin-top: 10px;">可是我还想送你 用粤语唱的诗</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="./images/music/music2/m5.jpg">
+                            <p style="margin-top: 10px;">一张歌单带你走进Dream Pop</p>
+                        </li>
+                        <li>
+                            <img src="./images/music/music2/m6.jpg">
+                            <p style="margin-top: 10px;">DigieJazzieGalaxie_6</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-shop">
+            <div class="wrapper clear">
+                <div class="sidenav">
+                    <h2><a style="font-weight:normal;color: #1F9432">豆品</a></h2>
+                </div>
+                <div class="side">
+                    <h2 style="margin-bottom:10px;font-size:15px;color:#072;font-weight: normal;line-height:40px;margin-bottom:10px;">热门活动&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</h2>
+                    <div style="padding-bottom: 30px; ">
+                        <img src="./images/shop/shop.jpg" width="265px;">
+                        <p style="color:#3377A9">
+                                我的豆瓣收藏夹里有什么
+                                </p>
+                    </div>
+                    <h2 style="margin-bottom:10px;font-size:15px;color:#072;font-weight: normal;line-height:40px;margin-bottom:10px;">官方小组&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·<span style="font-size:12px;color:#666666;">&nbsp;（<a href="http://www.baidu.com">更多</a>）</span></h2>
+                </div>
+                <div class="main">
+                    <h2 style="margin-bottom:10px;font-size:15px;color:#072;font-weight: normal;line-height:40px;margin-bottom:10px;">热门商品&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·<span style="font-size:12px;color:#666666;">&nbsp;（<a href="http://www.baidu.com">更多</a>）</span></h2>
+                    <ul class="clear">
+                        <li>
+                            <img src="./images/shop/s1.jpg">
+                            <div class="clear">
+                                <span style="color:#3377A9">豆瓣冻顶乌龙茶</span>
+                                <span style="float: right;color:#E55457;">￥59.00</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/shop/s2.jpg">
+                            <div class="clear">
+                                <span style="color:#3377A9">豆瓣软面笔记本</span>
+                                <span style="float: right;color:#E55457;">￥39.00</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="clear">
+                        <li>
+                            <img src="./images/shop/s3.jpg">
+                            <div class="clear">
+                                <span style="color:#3377A9">豆瓣收藏夹</span>
+                                <span style="float: right;color:#E55457;">￥99.00</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/shop/s4.jpg">
+                            <div class="clear">
+                                <span style="color:#3377A9">豆瓣经典帆布包</span>
+                                <span style="float: right;color:#E55457;">￥149.00</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-city" style="margin-bottom: 30px;">
+            <div class="wrapper clear">
+                <div class="sidenav">
+                    <h2><a style="font-weight:normal;color:#F3BC00;">音乐</a></h2>
+                    <ul>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">近期活动</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">主办方</a></li>
+                        <li style="margin: 8px 0;"><a href="http://www.baidu.com" style="font-size:14px;">舞台剧</a></li>
+                    </ul>
+                </div>
+                <div class="side">
+                    <h2 style="margin-bottom:10px;font-size:15px;color:#072;font-weight: normal;line-height:40px;margin-bottom:10px;">活动标签&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</h2>
+                    <div class="clear">
+                        <div style="font-size:14px;color:#333;">音乐» </div>
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com">小型现场</a></li>
+                            <li><a href="http://www.baidu.com">音乐会</a></li>
+                            <li><a href="http://www.baidu.com">演唱会</a></li>
+                            <li><a href="http://www.baidu.com">音乐节</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear">
+                        <div style="font-size:14px;color:#333;">戏剧» </div>
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com">话剧</a></li>
+                            <li><a href="http://www.baidu.com">音乐剧</a></li>
+                            <li><a href="http://www.baidu.com">舞剧</a></li>
+                            <li><a href="http://www.baidu.com">歌剧</a></li>
+                            <li><a href="http://www.baidu.com">戏曲</a></li>
+                            <li><a href="http://www.baidu.com">其他</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear">
+                        <div style="font-size:14px;color:#333;">聚会» </div>
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com">生活</a></li>
+                            <li><a href="http://www.baidu.com">集市</a></li>
+                            <li><a href="http://www.baidu.com">摄影</a></li>
+                            <li><a href="http://www.baidu.com">外语</a></li>
+                            <li><a href="http://www.baidu.com">桌游</a></li>
+                            <li><a href="http://www.baidu.com">夜店</a></li>
+                            <li><a href="http://www.baidu.com">交友</a></li>
+                            <li><a href="http://www.baidu.com">美食</a></li>
+                            <li><a href="http://www.baidu.com">派对</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear">
+                        <div style="font-size:14px;color:#333;">电影» </div>
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com">主题放映</a></li>
+                            <li><a href="http://www.baidu.com">影展</a></li>
+                            <li><a href="http://www.baidu.com">影院活动</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear">
+                        <div style="font-size:14px;color:#333;">其他» </div>
+                        <ul class="clear">
+                            <li><a href="http://www.baidu.com">讲座</a></li>
+                            <li><a href="http://www.baidu.com">展览</a></li>
+                            <li><a href="http://www.baidu.com">运动</a></li>
+                            <li><a href="http://www.baidu.com">旅行</a></li>
+                            <li><a href="http://www.baidu.com">公益</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main">
+                    <h2 style="margin-bottom:10px;font-size:15px;color:#072;font-weight: normal;line-height:40px;margin-bottom:10px;">重庆 · 本周热门活动&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·<span style="font-size:12px;color:#666666;">&nbsp;（<a href="http://www.baidu.com">更多</a>）</span></h2>
+                    <ul class="clear">
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/city/city1.jpg"></div>
+                            <div class="content_box">
+                                <div class="title">张杰 重庆演唱会</div>
+                                <div class="member">7月27日 周六 20:00 - 22:00</div>
+                                <div class="member">重庆奥体中心 九龙坡区奥体...</div>
+                                <div class="member">13人关注</div>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/city/city2.jpg"></div>
+                            <div class="content_box">
+                                <div class="title">致敬BEYOND黄家驹音乐会<br>重庆站</div>
+                                <div class="member">6月30日 周日 - 9月21日 周六</div>
+                                <div class="member">寅派动力 重庆市九龙坡区袁...</div>
+                                <div class="member">7人关注</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="clear">
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/city/city3.jpg"></div>
+                            <div class="content_box">
+                                <div class="title">钢琴家罗伯托·卡恰帕利亚音乐会</div>
+                                <div class="member">8月9日 周五 19:30 - 21:30</div>
+                                <div class="member">国泰艺术中心云瑚音乐厅 重...</div>        
+                                <div class="member">1人关注</div>
+                            </div>
+                        </li>
+                        <li class="clear">
+                            <div class="img_box"><img src="./images/city/city4.jpg"></div>
+                            <div class="content_box">
+                                <div class="title">《难忘的荧屏经典》 重庆木<br>管五重奏电影、电视剧音乐...</div>
+                                <div class="member">7月27日 周六 19:30 - 21:00</div>
+                                <div class="member">重庆市渝中区临江支路1号国...</div>
+                                <div class="member">1人关注</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper" style="border-top: 1px dashed #dcdcdc;padding-top: 0;">
+            <div class="information_box clear">
+                <span class="normal">
+                    © 2005－2019 douban.com, all rights reserved 北京豆网科技有限公司<br>
+                    <a href="http://www.baidu.com">京ICP证090015号</a> 京ICP备11027288号 网络视听许可证<a href="http://www.baidu.com" >0110418</a>号<br>
+                    京网文[2015]2026-368号 <img src="https://img3.doubanio.com/pics/biaoshi.gif" style="width: 15px;"><a href="http://www.baidu.com" class="tags_a">京公网安备11010502000728</a>&nbsp;&nbsp;新出网证(京)字129号<br>
+                    违法和不良信息举报电话：4008353331-9&nbsp;<img src="https://img3.doubanio.com/img/files/file-1423193113.png" height="16px"><br>
+                    <img src="https://img3.doubanio.com/pics/icon/jubao.png" width="15px"><a href="http://www.baidu.com">中国互联网举报中心</a>&nbsp;电话：12377&nbsp;<a href="http://www.baidu.com">新出发京批字第直160029号</a>
+                </span>
+                <span class="special">
+                    <a href="http://www.baidu.com">关于豆瓣</a>
+                    · 
+                    <a href="http://www.baidu.com">在豆瓣工作</a>
+                    · 
+                    <a href="http://www.baidu.com">联系我们</a>
+                    · 
+                    <a href="http://www.baidu.com">法律声明</a>
+                    · 
+                    <a href="http://www.baidu.com">帮助中心</a>
+                    · 
+                    <a href="http://www.baidu.com">移动应用</a>
+                    · 
+                    <a href="http://www.baidu.com">豆瓣广告</a>
+                    <a href="http://www.baidu.com" class="last_photo">
+                        <img src="./images/wrapper.jpg">
+                    </a>
+                </span>
+            </div>
+        </div>
+
+        <script>
+            let authCode = document.getElementById('authCode');
+
+            function show() {
+                authCode.style.display = "block";
+            }
+
+            function stop() {
+                authCode.style.display = "none";
+            }
+        </script>
+    </body>
+</html>
