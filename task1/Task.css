@@ -1,0 +1,67 @@
+.div1{
+    background: url("1.jpg");
+    width: 1600px;
+    height: 30px;
+}
+.div2{
+    background: url("2.jpg");
+    width: 1600px;
+    height: 99px;
+}
+.div3{
+    background: url("3.jpg");
+    width: 1600px;
+    height: 44px;
+}
+.div4{
+    width: 1600px;
+    height: 1300px;
+    background: -webkit-linear-gradient(top,gray,white);
+}
+.div5{
+   background: url("5.jpg");
+    width: 964px;
+    height: 310px;
+    margin:0 auto;
+}
+.div6{
+    background: url("8.jpg");
+    height: 615px;
+    width: 720px;
+    float: right;
+    margin-top: 97px;
+}
+.div7{
+    background: url("6.jpg");
+    width: 209px;
+    height: 945px;
+    float: left;
+    margin-left: 13px;
+    margin-top: 20px;
+}
+.div8 {
+    background: url("9.jpg");
+    width: 719px;
+    height: 262px;
+    margin-top:15px;
+    float: right;
+}
+.div10{
+    width: 965px;
+    height: 1100px;
+    margin: 0 auto;
+    background: white;
+}
+.div11{
+    background: url("7.jpg");
+    width: 721px;
+    height: 77px;
+    margin-top: 20px;
+    margin-left: 235px;
+}
+.div9{
+    background: url("10.jpg");
+    width: 1600px;
+    height: 303px;
+   margin-top: 0px;
+}
