@@ -1,0 +1,211 @@
+/*css*/
+.block {
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+
+.sliderContainer {
+    position: relative;
+    text-align: center;
+    width: 252px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 15px;
+    background: #f7f9fa;
+    color: #45494c;
+    border: 1px solid #e4e7eb;
+    outline: none;
+    bottom:10px;
+}
+
+.sliderContainer_active .slider {
+    height: 38px;
+    top: -1px;
+    outline:none;
+}
+
+.sliderContainer_active .sliderMask {
+    height: 38px;
+    border: 1px solid #D2F4EF;
+    outline: none;
+}
+
+.sliderContainer_success .slider {
+    height: 38px;
+    top: -1px;
+    border: 1px solid #D2F4EF;
+    background-color: #D2F4EF !important;
+}
+
+.sliderContainer_success .sliderMask {
+    height: 38px;
+    border: 1px solid #D2F4EF;
+    background-color: #D2F4EF;
+}
+
+.sliderContainer_success .sliderIcon {
+    background-position: 0 0 ;
+}
+
+.sliderContainer_fail .slider {
+    height: 38px;
+    top: -1px;
+    border: 1px solid #f57a7a;
+    background-color: #f57a7a ;
+}
+
+
+.sliderContainer_fail .sliderMask {
+    height: 38px;
+    border: 1px solid #f57a7a;
+    background-color: #f57a7a;
+}
+
+.sliderContainer_fail .sliderIcon {
+    top: 14px;
+    background-position: 0 -82px;
+}
+
+.sliderContainer_active .sliderText, .sliderContainer_success .sliderText, .sliderContainer_fail .sliderText {
+    display: none;
+}
+
+.sliderMask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40px;
+    border: 0 solid #1991FA;
+    
+    
+    
+    background: #D1E9FE;
+}
+
+.slider {
+    position: relative;
+    
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border:58px;
+    
+    background: url(../img/button.png);
+    cursor: pointer;
+}
+
+ .slider:hover {
+        border:none;
+        outline:none;
+        background: url(../img/button_on.png);
+        cursor: pointer;
+   }
+
+        .slider:hover .sliderIcon {
+            background-position: 0 -8px;
+        }
+
+.sliderIcon {
+    position: absolute;
+    top: 15px;
+    left: 13px;
+    width: 14px;
+    height: 12px;
+    
+    background-size: 34px 471px;
+}
+
+.refreshIcon {
+    position: relative;
+    left:27px;
+    top: 93px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: url(../img/rf.png) no-repeat ;
+}
+.refreshIcon:hover{
+    background:url(../img/rf_on.png) no-repeat;
+}
+#container {
+    border: 1.5px solid #d1d1d1;
+    width: 278px; 
+    height: 280px;
+    z-index:0;
+}
+
+
+
+a:link, a:visited, a:hover, a:active {
+    margin-left: 100px;
+    color: #0366D6;
+}
+.sliderText {
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    left: 0px;
+    color: #88949d;
+}
+#captcha{
+    position:absolute;
+    left:12px;
+}
+.undefined{
+    position:relative;
+    top:12px;
+}
+#cancel {
+    width: 20px;
+    height: 20px;
+    background: url(../img/cancel.png);
+    position:relative;
+    top:15px;
+    left:8px;
+}
+    #cancel:hover {   
+        width: 20px;
+        height: 20px;
+        background: url(../img/cancel_on.png);
+        position: relative;
+        top: 15px;
+        left: 8px;
+    }
+      
+.hide {
+            display: none;
+        }
+#line {
+    width: 278px;
+    border-top: 1.5px solid #eeeeee;
+    position:relative;
+    top:5px;
+}
+#login{
+    background-color:#ffffff;
+    position:absolute;
+    width:278px;
+    height:280px;
+    z-index:999;
+}
+.text{
+    position:relative;
+    left:15px;
+    top:20px;
+    width:240px;
+    height:34px;
+}
+#login_btn {
+    position:relative;
+    top:150px;
+    left:15px;
+    hidefocus ="hidefocus";
+    outline:none;
+    border-radius: 2px;
+    background-color: #00a7de;
+    width: 240px;
+    height: 34px;
+}
