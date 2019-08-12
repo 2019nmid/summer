@@ -16,7 +16,7 @@
 
 ### 提交作业
 
-- 完成一个todolist(备忘录)（https://www.zhihu.com/tardis/sogou/art/61400781）
+- 完成一个todolist(备忘录)(https://www.zhihu.com/tardis/sogou/art/61400781)
 
 
 
