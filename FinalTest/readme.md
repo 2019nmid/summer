@@ -4,12 +4,11 @@
 
 网页选择
 
-- 选择一
-- [1]: https://y.qq.com/	"git"
+- [选择一](https://y.qq.com/	"git")
 - 选择二
-- [2]: http://www.kugou.com/	"git"
+  [2]: http://www.kugou.com/	"git"
 - 选择三
-- [3]: https://www.bilibili.com/	"git"
+  [3]: https://www.bilibili.com/	"git"
 
 考核任务要求
 
