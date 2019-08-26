@@ -5,10 +5,8 @@
 网页选择
 
 - [选择一](https://y.qq.com/	"git")
-- 选择二
-  [2]: http://www.kugou.com/	"git"
-- 选择三
-  [3]: https://www.bilibili.com/	"git"
+- ]选择二](http://www.kugou.com/	"git")
+- [选择三](https://www.bilibili.com/	"git")
 
 考核任务要求
 
