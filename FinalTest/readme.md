@@ -4,11 +4,11 @@
 
 网页选择
 
-- 选择一
+- 选择一[传送门]
   [传送门]: https://y.qq.com/	"git"
-- 选择二
+- 选择二[传送门]
   [传送门]: http://www.kugou.com/	"git"
-- 选择三
+- 选择三[传送门]
   [传送门]: https://www.bilibili.com/	"git"
 
 考核任务要求
